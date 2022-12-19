@@ -1,0 +1,54 @@
+:root {
+  --color-dark: #2c3e50;
+  --color-red: #f9526a;
+  --color-white: #ffffff;
+  --color-black: #1b2631;
+
+  --body-background: var(--color-red);
+  --color-text: var(--color-dark);
+  --card-background: var(--color-white);
+}
+
+#app {
+  background: var(--body-background);
+  font-family: "Poppins", Avenir, Helvetica, Arial, sans-serif;
+  text-align: center;
+  color: var(--color-text);
+  margin: 0;
+  padding-top: 60px;
+  transition: background 300ms ease-in-out;
+  width: 100vw;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+  overflow-x: hidden;
+}
+
+h2 {
+  letter-spacing: 1px;
+  text-transform: uppercase;
+}
+
+.scrollSection {
+  display: grid;
+  min-height: 100vh;
+  place-items: center;
+  width: 100vw;
+}
+.card {
+  background: var(--card-background);
+  box-shadow: rgba(17, 17, 26, 0.05) 0px 4px 16px,
+    rgba(17, 17, 26, 0.05) 0px 8px 32px;
+  border-radius: 25px;
+  display: inline-flex;
+  margin: 0 auto 45px;
+  padding: 60px 60px;
+  height: 300px;
+  width: 300px;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
